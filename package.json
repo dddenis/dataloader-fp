@@ -24,5 +24,28 @@
     "node": "14"
   },
   "packageManager": "yarn@3.0.2",
-  "sideEffects": false
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf ./build",
+    "format": "yarn format:base .",
+    "format:base": "prettier --config ./.prettierrc.ci.js --write",
+    "lint": "yarn lint:base .",
+    "lint:base": "eslint --config .eslintrc.ci.js --max-warnings=0",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.31.1",
+    "@typescript-eslint/parser": "4.31.1",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "husky": "7.0.2",
+    "lint-staged": "11.1.2",
+    "pinst": "2.1.6",
+    "prettier": "2.4.1",
+    "prettier-plugin-organize-imports": "2.3.3",
+    "typescript": "4.4.3"
+  }
 }
