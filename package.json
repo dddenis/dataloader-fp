@@ -1,0 +1,28 @@
+{
+  "name": "ts-starter",
+  "version": "0.1.0",
+  "description": "TS Starter",
+  "homepage": "https://github.com/dddenis/ts-starter",
+  "bugs": {
+    "url": "https://github.com/dddenis/ts-starter/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Denis Goncharenko",
+    "email": "dddenjer@gmail.com"
+  },
+  "files": [
+    "./build"
+  ],
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dddenis/ts-starter.git"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "packageManager": "yarn@3.0.2",
+  "sideEffects": false
+}
