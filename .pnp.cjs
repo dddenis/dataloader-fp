@@ -48,7 +48,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fp-ts", "npm:2.11.2"],
             ["husky", "npm:7.0.2"],
             ["lint-staged", "npm:11.1.2"],
-            ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
             ["prettier-plugin-organize-imports", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:2.3.3"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
@@ -132,7 +131,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fp-ts", "npm:2.11.2"],
             ["husky", "npm:7.0.2"],
             ["lint-staged", "npm:11.1.2"],
-            ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.4.1"],
             ["prettier-plugin-organize-imports", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:2.3.3"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
@@ -1142,15 +1140,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["fromentries", [
-        ["npm:1.3.2", {
-          "packageLocation": "./.yarn/cache/fromentries-npm-1.3.2-f5392090b8-33729c529c.zip/node_modules/fromentries/",
-          "packageDependencies": [
-            ["fromentries", "npm:1.3.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["fs.realpath", [
         ["npm:1.0.0", {
           "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-99ddea01a7.zip/node_modules/fs.realpath/",
@@ -1799,16 +1788,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/picomatch-npm-2.3.0-5e60e6c82d-16818720ea.zip/node_modules/picomatch/",
           "packageDependencies": [
             ["picomatch", "npm:2.3.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["pinst", [
-        ["npm:2.1.6", {
-          "packageLocation": "./.yarn/cache/pinst-npm-2.1.6-750cbdedeb-3644c352a7.zip/node_modules/pinst/",
-          "packageDependencies": [
-            ["pinst", "npm:2.1.6"],
-            ["fromentries", "npm:1.3.2"]
           ],
           "linkType": "HARD",
         }]
