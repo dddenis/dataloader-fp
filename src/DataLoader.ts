@@ -10,17 +10,17 @@ import type { DataLoaderConfig, DataLoaderEnv } from './types';
 export interface DataLoader<R extends DataLoaderEnv, E extends Error, K, A> {
   readonly load: (key: K) => ReaderTaskEither<R, E, A>;
   readonly loadMany: (keys: ReadonlyArray<K>) => ReaderTask<R, ReadonlyArray<Either<E, A>>>;
-  readonly clear: (key: K) => Reader<R, OriginalDataLoader<K, A>>;
-  readonly clearAll: () => Reader<R, OriginalDataLoader<K, A>>;
+  readonly clear: (key: K) => Reader<R, void>;
+  readonly clearAll: () => Reader<R, void>;
   readonly prime: (key: K) => (value: Either<E, A>) => Reader<R, Either<E, A>>;
 }
 
-export function getDataLoader<R extends DataLoaderEnv, E extends Error, K, A, C = K>(
+export function getDataLoader<R, E extends Error, K, A, C = K>(
   config: DataLoaderConfig<R, E, K, A, C>,
-): DataLoader<R, E, K, A> {
+): DataLoader<R & DataLoaderEnv, E, K, A> {
   const withDataLoader =
     <B>(f: (dataLoader: OriginalDataLoader<K, A, C>) => B) =>
-    (env: R): B =>
+    (env: R & DataLoaderEnv): B =>
       f(env.getDataLoader(config)(env));
 
   return {
@@ -43,12 +43,12 @@ export function getDataLoader<R extends DataLoaderEnv, E extends Error, K, A, C 
 
     clear: (key) =>
       withDataLoader((dataLoader) => {
-        return dataLoader.clear(key);
+        dataLoader.clear(key);
       }),
 
     clearAll: () =>
       withDataLoader((dataLoader) => {
-        return dataLoader.clearAll();
+        dataLoader.clearAll();
       }),
 
     prime: (key) => (value) =>
