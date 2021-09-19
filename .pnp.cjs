@@ -21,12 +21,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "@dddenis/dataloader-fp",
         "reference": "workspace:."
+      },
+      {
+        "name": "example",
+        "reference": "workspace:example"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@dddenis/dataloader-fp", ["workspace:."]]
+      ["@dddenis/dataloader-fp", ["workspace:."]],
+      ["example", ["workspace:example"]]
     ],
     "fallbackPool": [
     ],
@@ -91,6 +96,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@dddenis/dataloader-fp", [
+        ["portal:../::locator=example%40workspace%3Aexample", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["@dddenis/dataloader-fp", "portal:../::locator=example%40workspace%3Aexample"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#portal:../::locator=example%40workspace%3Aexample", {
+          "packageLocation": "./.yarn/__virtual__/@dddenis-dataloader-fp-virtual-0d63a5457e/1/",
+          "packageDependencies": [
+            ["@dddenis/dataloader-fp", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#portal:../::locator=example%40workspace%3Aexample"],
+            ["@types/dataloader", null],
+            ["@types/fp-ts", null],
+            ["dataloader", "npm:2.0.0"],
+            ["fp-ts", "npm:2.11.2"]
+          ],
+          "packagePeers": [
+            "@types/dataloader",
+            "@types/fp-ts",
+            "dataloader",
+            "fp-ts"
+          ],
+          "linkType": "SOFT",
+        }],
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
@@ -980,6 +1009,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esutils", "npm:2.0.3"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["example", [
+        ["workspace:example", {
+          "packageLocation": "./example/",
+          "packageDependencies": [
+            ["example", "workspace:example"],
+            ["@dddenis/dataloader-fp", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#portal:../::locator=example%40workspace%3Aexample"],
+            ["dataloader", "npm:2.0.0"],
+            ["fp-ts", "npm:2.11.2"],
+            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["execa", [

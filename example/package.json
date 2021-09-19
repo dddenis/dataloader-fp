@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@dddenis/dataloader-fp": "portal:../",
+    "dataloader": "2.0.0",
+    "fp-ts": "2.11.2"
+  },
+  "devDependencies": {
+    "typescript": "4.4.3"
+  }
+}

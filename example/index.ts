@@ -1,8 +1,3 @@
-# DataLoader with fp-ts bindings
-
-### Example
-
-```typescript
 import { BatchLoadFn, DataLoaderEnv, getDataLoader } from '@dddenis/dataloader-fp';
 import { either } from 'fp-ts';
 import type { Either } from 'fp-ts/Either';
@@ -68,4 +63,3 @@ const dataLoaderD = getDataLoader({
   batchLoad: mkBatchLoadFn('something-else'),
   key,
 });
-```

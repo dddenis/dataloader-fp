@@ -22,8 +22,12 @@
   },
   "packageManager": "yarn@3.0.2",
   "sideEffects": false,
+  "workspaces": [
+    "./example"
+  ],
   "scripts": {
     "build": "yarn clean && tsc",
+    "build:ci": "yarn build && yarn w:example build",
     "clean": "rm -rf ./build",
     "format": "yarn format:base .",
     "format:base": "prettier --config ./.prettierrc.ci.js --write",
@@ -31,9 +35,9 @@
     "lint:base": "eslint --config .eslintrc.ci.js --max-warnings=0",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
-    "prepublishOnly": "pinst --disable"
+    "prepublishOnly": "pinst --disable",
+    "w:example": "yarn workspace example"
   },
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
