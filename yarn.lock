@@ -47,14 +47,19 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": 4.31.1
     "@typescript-eslint/parser": 4.31.1
+    dataloader: 2.0.0
     eslint: 7.32.0
     eslint-config-prettier: 8.3.0
+    fp-ts: 2.11.2
     husky: 7.0.2
     lint-staged: 11.1.2
     pinst: 2.1.6
     prettier: 2.4.1
     prettier-plugin-organize-imports: 2.3.3
     typescript: 4.4.3
+  peerDependencies:
+    dataloader: ^2.0.0
+    fp-ts: ^2.10.0
   languageName: unknown
   linkType: soft
 
@@ -506,6 +511,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dataloader@npm:2.0.0":
+  version: 2.0.0
+  resolution: "dataloader@npm:2.0.0"
+  checksum: 9f10b9d2e35225b08a72435facfe40c0c124e329f43bd0fe4d67411ee667d12145f7ce63f9b74f73af8556dc6a98bae59147a5cca2171315dc1de509d4db04c0
+  languageName: node
+  linkType: hard
+
 "debug@npm:^4.0.1, debug@npm:^4.1.1, debug@npm:^4.3.1":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
@@ -839,6 +851,13 @@ __metadata:
   version: 3.2.2
   resolution: "flatted@npm:3.2.2"
   checksum: 9d5e03fd9309b9103f345cf6d0cef4fa46201baa053b0ca3d57fa489449b0bee687b7355407898f630afbb1a1286d2a6658e7e77dea3b85c3cd6c6ce2894a5c3
+  languageName: node
+  linkType: hard
+
+"fp-ts@npm:2.11.2":
+  version: 2.11.2
+  resolution: "fp-ts@npm:2.11.2"
+  checksum: 84a524ef320b9376c653ac0d65ca036a3d9db1998711db9e0f72a1d63d158590ae6d3cde850ccbea652fa615de4ff6759af49e977b7526a9ede1c736055a8f5a
   languageName: node
   linkType: hard
 

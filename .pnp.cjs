@@ -37,8 +37,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@typescript-eslint/eslint-plugin", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:4.31.1"],
             ["@typescript-eslint/parser", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:4.31.1"],
+            ["dataloader", "npm:2.0.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:8.3.0"],
+            ["fp-ts", "npm:2.11.2"],
             ["husky", "npm:7.0.2"],
             ["lint-staged", "npm:11.1.2"],
             ["pinst", "npm:2.1.6"],
@@ -95,8 +97,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@dddenis/dataloader-fp", "workspace:."],
             ["@typescript-eslint/eslint-plugin", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:4.31.1"],
             ["@typescript-eslint/parser", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:4.31.1"],
+            ["dataloader", "npm:2.0.0"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-prettier", "virtual:bc6b702f9058f429a1e6f8233c052f33943dc7ff4bf890b0d315acce15334a47bd32b6829171723896a33abc86d6ab5498f1c2638bb556aae86b6f365d09d07a#npm:8.3.0"],
+            ["fp-ts", "npm:2.11.2"],
             ["husky", "npm:7.0.2"],
             ["lint-staged", "npm:11.1.2"],
             ["pinst", "npm:2.1.6"],
@@ -679,6 +683,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["dataloader", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/dataloader-npm-2.0.0-216fa8d208-9f10b9d2e3.zip/node_modules/dataloader/",
+          "packageDependencies": [
+            ["dataloader", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["debug", [
         ["npm:4.3.2", {
           "packageLocation": "./.yarn/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
@@ -1074,6 +1087,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/flatted-npm-3.2.2-d61e116742-9d5e03fd93.zip/node_modules/flatted/",
           "packageDependencies": [
             ["flatted", "npm:3.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fp-ts", [
+        ["npm:2.11.2", {
+          "packageLocation": "./.yarn/cache/fp-ts-npm-2.11.2-66cf1c59fd-84a524ef32.zip/node_modules/fp-ts/",
+          "packageDependencies": [
+            ["fp-ts", "npm:2.11.2"]
           ],
           "linkType": "HARD",
         }]
