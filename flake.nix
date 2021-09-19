@@ -10,7 +10,7 @@
     in flake-utils.lib.simpleFlake {
       inherit self nixpkgs;
 
-      name = "@dddenis/firestore-fp";
+      name = "@dddenis/dataloader-fp";
       preOverlays = [ devshell.overlay overlay ];
       systems = flake-utils.lib.defaultSystems;
 

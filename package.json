@@ -1,10 +1,10 @@
 {
-  "name": "ts-starter",
+  "name": "@dddenis/dataloader-fp",
   "version": "0.1.0",
-  "description": "TS Starter",
-  "homepage": "https://github.com/dddenis/ts-starter",
+  "description": "DataLoader with fp-ts",
+  "homepage": "https://github.com/dddenis/dataloader-fp",
   "bugs": {
-    "url": "https://github.com/dddenis/ts-starter/issues"
+    "url": "https://github.com/dddenis/dataloader-fp/issues"
   },
   "license": "MIT",
   "author": {
@@ -18,10 +18,7 @@
   "types": "./build/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dddenis/ts-starter.git"
-  },
-  "engines": {
-    "node": "14"
+    "url": "https://github.com/dddenis/dataloader-fp.git"
   },
   "packageManager": "yarn@3.0.2",
   "sideEffects": false,
@@ -36,6 +33,7 @@
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable"
   },
+  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
