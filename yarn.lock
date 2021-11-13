@@ -218,8 +218,9 @@ __metadata:
 "@dddenis/dataloader-fp@portal:../::locator=example%40workspace%3Aexample":
   version: 0.0.0-use.local
   resolution: "@dddenis/dataloader-fp@portal:../::locator=example%40workspace%3Aexample"
-  peerDependencies:
+  dependencies:
     dataloader: ^2.0.0
+  peerDependencies:
     fp-ts: ^2.10.0
   languageName: node
   linkType: soft
@@ -232,7 +233,7 @@ __metadata:
     "@commitlint/config-conventional": 14.1.0
     "@typescript-eslint/eslint-plugin": 4.33.0
     "@typescript-eslint/parser": 4.33.0
-    dataloader: 2.0.0
+    dataloader: ^2.0.0
     eslint: 7.32.0
     eslint-config-prettier: 8.3.0
     fp-ts: 2.10.0
@@ -242,7 +243,6 @@ __metadata:
     prettier-plugin-organize-imports: 2.3.4
     typescript: 4.4.4
   peerDependencies:
-    dataloader: ^2.0.0
     fp-ts: ^2.10.0
   languageName: unknown
   linkType: soft
@@ -868,7 +868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dataloader@npm:2.0.0":
+"dataloader@npm:^2.0.0":
   version: 2.0.0
   resolution: "dataloader@npm:2.0.0"
   checksum: 9f10b9d2e35225b08a72435facfe40c0c124e329f43bd0fe4d67411ee667d12145f7ce63f9b74f73af8556dc6a98bae59147a5cca2171315dc1de509d4db04c0
@@ -1161,7 +1161,6 @@ __metadata:
   resolution: "example@workspace:example"
   dependencies:
     "@dddenis/dataloader-fp": "portal:../"
-    dataloader: 2.0.0
     fp-ts: 2.10.0
     typescript: 4.4.4
   languageName: unknown

@@ -299,15 +299,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/@dddenis-dataloader-fp-virtual-0d63a5457e/1/",
           "packageDependencies": [
             ["@dddenis/dataloader-fp", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#portal:../::locator=example%40workspace%3Aexample"],
-            ["@types/dataloader", null],
             ["@types/fp-ts", null],
             ["dataloader", "npm:2.0.0"],
             ["fp-ts", "npm:2.10.0"]
           ],
           "packagePeers": [
-            "@types/dataloader",
             "@types/fp-ts",
-            "dataloader",
             "fp-ts"
           ],
           "linkType": "SOFT",
@@ -1494,7 +1491,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["example", "workspace:example"],
             ["@dddenis/dataloader-fp", "virtual:260cbded26170ad9574d8af795f720c814500bad7a46f467f26b2daa1d7cb0583916d1f4f34948412d6d3e69e4f2781f1908be54ba6e3e97f1f75b8445445101#portal:../::locator=example%40workspace%3Aexample"],
-            ["dataloader", "npm:2.0.0"],
             ["fp-ts", "npm:2.10.0"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
