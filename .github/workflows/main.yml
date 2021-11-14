@@ -1,12 +1,13 @@
 name: Main
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
+  push:
+    branches:
+      - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,8 +27,20 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Publish
+      - name: Version
+        id: version
         if: github.event_name == 'push'
+        uses: TriPSs/conventional-changelog-action@v3
+
+      - name: Publish
+        if: ${{ steps.version.outputs.skipped == 'false' }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn npm publish
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.version.outputs.skipped == 'false' }}
+        with:
+          body: ${{ steps.version.outputs.clean_changelog }}
+          tag_name: ${{ steps.version.outputs.tag }}
