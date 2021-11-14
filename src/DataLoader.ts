@@ -1,4 +1,4 @@
-import OriginalDataLoader from 'dataloader';
+import type OriginalDataLoader from 'dataloader';
 import { either, readonlyArray, taskEither } from 'fp-ts';
 import type { Either } from 'fp-ts/Either';
 import { identity, pipe } from 'fp-ts/function';
