@@ -1,4 +1,4 @@
-name: Main
+name: Release
 
 on:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: 16
 
       - name: Build
         run: yarn build:ci
@@ -27,20 +27,15 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Version
-        id: version
+      - name: Release
+        id: release
         if: github.event_name == 'push'
-        uses: TriPSs/conventional-changelog-action@v3
+        uses: GoogleCloudPlatform/release-please-action@v2
+        with:
+          release-type: node
 
       - name: Publish
-        if: ${{ steps.version.outputs.skipped == 'false' }}
+        if: ${{ steps.release.outputs.release_created }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: yarn npm publish
-
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: ${{ steps.version.outputs.skipped == 'false' }}
-        with:
-          body: ${{ steps.version.outputs.clean_changelog }}
-          tag_name: ${{ steps.version.outputs.tag }}
