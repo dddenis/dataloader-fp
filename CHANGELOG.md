@@ -8,6 +8,13 @@
 
 
 
+### [0.1.3](https://www.github.com/dddenis/dataloader-fp/compare/v0.1.2...v0.1.3) (2021-12-04)
+
+
+### Bug Fixes
+
+* publish cjs and esm builds ([b391427](https://www.github.com/dddenis/dataloader-fp/commit/b391427fbf433de96c321d8d9554cb81701026c7))
+
 ## [0.1.1](https://github.com/dddenis/dataloader-fp/compare/v0.1.0...v0.1.1) (2021-09-19)
 
 
@@ -31,6 +38,3 @@
 * add DataLoaderEnv ([f1ba8d6](https://github.com/dddenis/dataloader-fp/commit/f1ba8d6afda4369c9446699d1385826f1c92b843))
 * add mapEntitiesToIds ([64b8fe2](https://github.com/dddenis/dataloader-fp/commit/64b8fe2be6fd31f869e73c22803957fd3346659b))
 * init ([a13a1b9](https://github.com/dddenis/dataloader-fp/commit/a13a1b9cb7f3ccd05a1d34c0382471c7678d7c35))
-
-
-
